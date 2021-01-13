@@ -47,9 +47,9 @@ ul {
 
 .navbar-fade {
     animation-name: navbar-fade;
-    animation-duration: 0.4s;
+    animation-duration: 0.8s;
     -webkit-animation-name: navbar-fade;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.8s;
 }
 
 @keyframes navbar-fade {
@@ -187,3 +187,9 @@ ul {
     }
 }
 
+/* scroll test
+#test {
+    height: 4000px;
+    background-color: bisque;
+}
+*/
