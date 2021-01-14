@@ -30,6 +30,10 @@ a {
     text-transform: uppercase;
 }
 
+#navbarBrand {
+    text-transform: none;
+}
+
 ul {
     list-style-type: none;
 }
