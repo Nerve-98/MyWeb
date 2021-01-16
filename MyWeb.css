@@ -197,3 +197,150 @@ ul {
     background-color: bisque;
 }
 */
+
+/* Section */
+.section-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* WELCOME AREA */
+.welcome-area {
+	height: auto;
+}
+
+.welcome-area > .container {
+	position: relative;
+	height: 100%;
+}
+
+.welcome-area > .container > .image-slide {
+	height: 100%;
+}
+
+.welcome-area > .container > .image-prev,
+.welcome-area > .container > .image-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.welcome-area > .container > .image-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.welcome-area > .container > .image-prev:hover,
+.welcome-area > .container > .image-next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.welcome-area > .container > .dots {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	text-align: center;
+}
+
+.welcome-area > .container > .dots > .dot {
+	cursor: pointer;
+	height: 6px;
+	width: 30px;
+	margin: 0 4px;
+    background-color: darkgray;
+    border: 2px solid white;
+	border-radius: 4px;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.welcome-area > .container > .dots > .dot.active,
+.welcome-area > .container > .dots > .dot:hover {
+	background-color: white;
+}
+.welcome-area > .container > .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+
+/* section */
+section {
+    padding: 100px 50px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 50px;
+    display: inline-block;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, royalblue, aquamarine);
+}
+
+
+/* about text */
+
+.about-area > .text {
+    display: block;
+    border: solid;
+	padding: 30px;
+}
+
+@media (min-width: 950px) {
+	.about-area > .text {
+		width: calc(60% - 100px);
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        left: 80px;
+		padding: 0 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .title {
+        display: block;
+    }
+}
+
+.about-area > .text * {
+    font-size: 16px;
+
+}
+
+.about-area > .text > .intro {
+	padding: 20px 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: 1.5px;
+}
