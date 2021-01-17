@@ -312,19 +312,19 @@ section {
 /* about text */
 
 .about-area > .text {
+    word-break: keep-all;
     display: block;
-    border: solid;
 	padding: 30px;
 }
 
 @media (min-width: 950px) {
 	.about-area > .text {
-		width: calc(60% - 100px);
+		width: calc(65% - 40px);
         display: inline-block;
         position: relative;
-        top: 30px;
-        left: 80px;
-		padding: 0 50px;
+        top: 60px;
+        left: 30px;
+        padding: 0 20px;
     }
 }
 
@@ -342,5 +342,5 @@ section {
 .about-area > .text > .intro {
 	padding: 20px 0;
 	font-family: 'Noto Sans KR', sans-serif;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 }
