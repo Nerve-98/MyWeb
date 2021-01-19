@@ -43,10 +43,10 @@
 
         </header>
 
-        <!-- scroll test
-        <div id='test'>TEST</div>
-        -->
-        
+
+
+
+        <!-- section container start -->
         <div class="section-container">
             <div class="welcome-area">
                 <div class="container">
@@ -102,23 +102,74 @@
     
                     <div class="item">
                         <div class="icon"><span><i class="fab fa-js-square"></i></span></div>
-                        <div class="service">JAVASCRIPT</div>
+                        <div class="skill">JAVASCRIPT</div>
                         
                     </div>
     
                     <div class="item">
                         <div class="icon"><span><i class="fab fa-java"></i></span></div>
-                        <div class="service">JAVA</div>
+                        <div class="skill">JAVA</div>
                     </div>
     
                     <div class="item">
                         <div class="icon"><span><i class="fas fa-database"></i></span></div>
-                        <div class="service">DATABASE</div>
+                        <div class="skill">DATABASE</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="project-area" id="project">
+                <div class="title">
+                    PORTFOLIO
+                </div>
+                <div class="filter">
+                    <ul class="list">
+                        <li class="listItem active" id="all">
+                            All
+                        </li>
+                        <li class="listItem" id="uiux">
+                            UI/UX
+                        </li>
+                        <li class="listItem" id="java">
+                            JAVA
+                        </li>
+                        <li class="listItem" id="db">
+                            DB
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="filterItem db">
+                        <div class="image">
+                            <div class="overlay"><i class="far fa-image"></i></div>
+                            <img src="">
+                        </div>
+                        <div class="main">
+                            메인 제목
+                        </div>
+                        <div class="sub">
+                            부 제목
+                        </div>
+                        <div class="text">
+                            프로젝트 상세 설명
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
+        <!-- section container end -->
 
+
+        <div id="projectModal" class="modal">
+            <span class="close" id="modalClose">&times;</span>
+            <div class="container">
+                <img id="modalImage">
+                <div id="modalMain" class="modal-main"></div>
+                <div id="modalSub" class="modal-sub"></div>
+                <div id="modalText" class="modal-text"></div>
+            </div>
+        </div>
 
         <!-- my script -->
         <!-- https://new-time.tistory.com/244 reference to path -->

@@ -299,7 +299,7 @@ section {
     display: inline-block;
 }
 
-.about-area > .title::after {
+.title::after {
     content: "";
     display: block;
     width: 100px;
@@ -332,6 +332,7 @@ section {
     .title {
         display: block;
         width: calc(100% - 100px);
+
     }
 }
 
@@ -348,19 +349,52 @@ section {
 
 
 /* skills area */
+.skills-area {
+	height: auto;
+	background-color: #f9f9ff;
+}
+
 .skills-area > .title {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     letter-spacing: 3px;
-    padding-bottom: 100px;
+    padding: 50px;
+    display: block;
 }
 
-.skills-area > .title::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 10px;
-    margin: 0 auto;
-    background-image: linear-gradient(to right, royalblue, aquamarine);
+
+
+.skills-area > .container {
+	text-align: center;
+}
+
+.skills-area > .container > .item {
+	height: auto;
+	background-color: white;
+	padding: 20px;
+	margin: 20px;
+	text-align: left;
+	transition: all 0.5s ease;
+}
+
+.skills-area > .container > .item:hover {
+	transform: scale(1.015);
+	box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.skills-area > .container > .item > .icon {
+	padding: 10px 0;
+	display: inline-block;
+}
+
+.skills-area > .container > .item > .icon > span > i {
+	font-size: 48px;
+    color: #aaa;
+}
+
+.skills-area > .container > .item > .skill {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 10px 0;
 }
