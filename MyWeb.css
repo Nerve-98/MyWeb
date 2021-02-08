@@ -305,7 +305,7 @@ section {
     width: 100px;
     height: 10px;
     margin: 0 auto;
-    background-image: linear-gradient(to right, royalblue, aquamarine);
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 }
 
 
@@ -475,7 +475,7 @@ section {
 }
 
 .project-area > .container > .filterItem > .image:hover > .overlay {
-	background-image: linear-gradient(to right, royalblue , aquamarine);
+    background-image: linear-gradient(to right, #30cfd0 0%, #330867 100%);
 	opacity: 0.8;
 }
 
@@ -522,7 +522,7 @@ section {
 }
 
 #projectModal > .close {
-	display: none;
+	display: block;
 	text-align: right;
 	color: #f1f1f1;
 	font-size: 40px;
