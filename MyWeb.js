@@ -146,8 +146,6 @@ function viewPortfolio(event) {
     var textNode = subNode.nextElementSibling;
   
     document.getElementById('modalImage').src = imageNode.src;
-    document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
-    document.getElementById('modalSub').innerHTML = subNode.innerHTML;
     document.getElementById('modalText').innerHTML = textNode.innerHTML;
     document.getElementById('projectModal').style.display = 'block';
 }
@@ -160,3 +158,17 @@ var filterItems = document.getElementsByClassName('overlay');
 for(var i=0;i<filterItems.length;i++){
     filterItems[i].addEventListener('click', viewPortfolio);
 }
+
+function moveTo(id) {
+    if(id == 'brand'){
+      window.scrollTo(0, 0);
+    } else {
+      window.scrollTo(0, document.getElementById(id).offsetTop - 70);
+    }
+    document.getElementById('menu').classList.remove('show');
+  }
+  
+  document.getElementById('navbarBrand').addEventListener('click', moveTo.bind(null,'brand'));
+  document.getElementById('navbarAbout').addEventListener('click', moveTo.bind(null,'about'));
+  document.getElementById('navbarSkill').addEventListener('click', moveTo.bind(null,'skill'));
+  document.getElementById('navbarProject').addEventListener('click', moveTo.bind(null,'project'));
