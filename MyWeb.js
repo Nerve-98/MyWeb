@@ -131,6 +131,7 @@ function removeClass(element, name) {
 document.getElementById('all').addEventListener('click', filterSelection.bind(null, 'all'));
 document.getElementById('db').addEventListener('click', filterSelection.bind(null, 'db'));
 document.getElementById('java').addEventListener('click', filterSelection.bind(null, 'java'));
+document.getElementById('quant').addEventListener('click', filterSelection.bind(null, 'quant'));
 document.getElementById('ml').addEventListener('click', filterSelection.bind(null, 'ml'));
 function viewPortfolio(event) {
     var polyNode = event.target;

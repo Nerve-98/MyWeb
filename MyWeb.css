@@ -51,9 +51,9 @@ ul {
 
 .navbar-fade {
     animation-name: navbar-fade;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
     -webkit-animation-name: navbar-fade;
-    -webkit-animation-duration: 0.8s;
+    -webkit-animation-duration: 1s;
 }
 
 @keyframes navbar-fade {
@@ -68,10 +68,10 @@ ul {
 @-webkit-keyframes navbar-fade {
     0% {
         opacity: 0.3;
-   }
-   100% {
-        opacity: 1;
-   }
+    }
+    100% {
+            opacity: 1;
+    }
 }
 
 .header-area.navbar-fixed {
@@ -326,7 +326,7 @@ section {
 }
 
 @media (max-width: 950px) {
-    .skills-area > .title {
+    .about-area > .title {
         display: block;
         width: calc(100% - 100px);
 
@@ -443,6 +443,9 @@ section {
 	.project-area > .container > .filterItem {
 		width: calc(50% - 40px);
 	}
+	.project-area > .container > .filterItem > .image {
+		height: 300px;
+	}
 }
 
 
@@ -453,12 +456,6 @@ section {
 .project-area > .container > .filterItem > .image {
 	position: relative;
 	max-height: 500px;
-}
-
-@media (min-width: 950px) {
-	.project-area > .container > .filterItem > .image {
-		height: 300px;
-	}
 }
 
 .project-area > .container > .filterItem > .image > .overlay {
@@ -552,4 +549,11 @@ section {
 #projectModal > .container > .modal-text {
 	font-size: 16px;
 	color: white;
+
+    max-width: 600px;
+    margin: auto;
+    word-break: keep-all;
+    display: block;
+    text-align: center;
 }
+
